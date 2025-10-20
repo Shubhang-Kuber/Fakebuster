@@ -28,6 +28,7 @@ uploaded = files.upload()
 #The entire dataframe collected is stored in the variable called as "data"
 #data_head(), as the name suggestes will display the first 5 rows (Known as the head of the CSV file)
 #Make sure the the file being read is same as the one that is uploaded
+#Data Collection Step
 
 data = pd.read_csv("news (1) (1).csv")
 data.head()
@@ -36,6 +37,7 @@ data.head()
 #Since the CSV File has one unnamed column, we are going to drop that column
 #This Step is used for data Cleaning
 #Data Cleaning is the process of removing the rundandancies, NaN values, None Values etc from the files
+#Data Cleaning Step
 data = data.drop(["Unnamed: 0"], axis=1)
 data.head(5)
 
